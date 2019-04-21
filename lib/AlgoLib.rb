@@ -4,6 +4,7 @@ require 'AlgoLib/recursion'
 require 'AlgoLib/sorting'
 require 'AlgoLib/string_op'
 require 'AlgoLib/array_op'
+require 'AlgoLib/linked_list'
 
 module AlgoLib
   # Your code goes here...
@@ -25,5 +26,9 @@ module AlgoLib
 
   def self.arr
     ArrayOp.new
+  end
+
+  def self.linked_list
+    LinkedList.new
   end
 end
