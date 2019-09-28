@@ -1,4 +1,5 @@
 class Stack
+  #include Extended::St
   def initialize(size = 100)
     @size = size
     @top = -1
@@ -23,33 +24,6 @@ class Stack
     fail StackEmptyError if stack_empty?
     @top -= 1
     @stack.pop
-  end
-
-  def reverse
-    unless is_empty?
-      element = pop
-      reverse
-      insert_at(element)
-    end
-  end
-
-  def smallest
-    ax_stack = Stack.new
-    temp = pop
-    smaller(ax_stack, temp, temp )
-    top
-  end
-
-  def smaller(stack, value, small)
-    unless is_empty?
-      if small > value
-        small = value
-      end
-      smaller(stack, pop, small)
-      #transfer(stack)
-    end
-    small
-    #push(small)
   end
 
   def top

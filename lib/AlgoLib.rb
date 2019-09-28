@@ -5,6 +5,8 @@ require 'AlgoLib/sorting'
 require 'AlgoLib/string_op'
 require 'AlgoLib/array_op'
 require 'AlgoLib/linked_list'
+require 'AlgoLib/list_op'
+require 'AlgoLib/search'
 
 module AlgoLib
   # Your code goes here...
@@ -18,6 +20,10 @@ module AlgoLib
 
   def self.sorting
     Sorting.new
+  end
+
+  def self.search
+    Search.new
   end
   
   def self.str

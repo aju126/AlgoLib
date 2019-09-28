@@ -6,6 +6,10 @@ class LinkedList
     @head.next = nil
   end
 
+  def head
+    @head
+  end
+
   def insert(element)
     node = Node.new
     node.data = element
@@ -16,6 +20,11 @@ class LinkedList
     return node if node.next == nil
     return tail(node.next)
   end
+
+  def detect_loop
+
+  end
+
 
   def print_list(node = @head)
     p node.data
